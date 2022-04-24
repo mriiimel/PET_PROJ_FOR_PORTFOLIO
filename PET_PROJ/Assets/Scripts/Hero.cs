@@ -4,7 +4,7 @@ namespace Pet_Proj
     public class Hero : Unit
     {
         [SerializeField] private Rigidbody _rigidbody;
-        [SerializeField] private GameObject _hero;
+        //[SerializeField] private GameObject _hero;
         
 
         void Start()

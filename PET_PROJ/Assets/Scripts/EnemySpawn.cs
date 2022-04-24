@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Pet_Proj
 {
-    public class EnemySpawn : Unit
+    public class EnemySpawn : MonoBehaviour
     {
         
         [SerializeField] private List<GameObject> _pooledObj;
@@ -20,6 +20,7 @@ namespace Pet_Proj
                 tmp = Instantiate(_enemyGameObj, transform.position, Quaternion.identity);
                 tmp.SetActive(true);
                 _pooledObj.Add(tmp);
+                
             }
         }
 

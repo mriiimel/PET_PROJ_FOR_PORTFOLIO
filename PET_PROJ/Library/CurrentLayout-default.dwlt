@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 42100000
       m_LastClickedID: 0
       m_ExpandedIDs: 6cfbffff
       m_RenameOverlay:
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 25.664581, y: 5.8556275, z: 21.866896}
+    m_Target: {x: 53.30995, y: 35.427666, z: 13.181108}
     speed: 2
-    m_Value: {x: 25.664581, y: 5.8556275, z: 21.866896}
+    m_Value: {x: 53.30995, y: 35.427666, z: 13.181108}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -560,9 +560,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.00030119368, y: -1.0001471, z: 0.0048090727, w: -0.0018276152}
+    m_Target: {x: 0.4046282, y: -0.05544215, z: 0.024459867, w: 0.91265035}
     speed: 2
-    m_Value: {x: 0.0003011454, y: -0.99998677, z: 0.0048083016, w: -0.0018273222}
+    m_Value: {x: 0.40459836, y: -0.054064285, z: 0.023849003, w: 0.9125835}
   m_Size:
     m_Target: 11.411661
     speed: 2
@@ -629,22 +629,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Asset/DogKnight/Mesh
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Asset/DogKnight/Mesh
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 74}
-    m_SelectedIDs: d4490000
-    m_LastClickedID: 18900
-    m_ExpandedIDs: 000000006e49000070490000724900007449000076490000784900007a4900007c4900007e49000080490000824900008449000086490000884900008a4900008c4900008e4900009049000092490000944900009649000098490000c649000000ca9a3b
+    scrollPos: {x: 0, y: 134}
+    m_SelectedIDs: de490000
+    m_LastClickedID: 18910
+    m_ExpandedIDs: 000000006e49000070490000724900007449000076490000784900007a4900007c4900007e49000080490000824900008449000086490000884900008a4900008c4900008e490000904900009249000094490000964900009849000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000724700007647000002430000465e0000ace90000b68c000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
