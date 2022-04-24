@@ -28,7 +28,7 @@ namespace Pet_Proj
         float HeroDoDamage(float HeroDamage)
         {
 
-            return 0;
+            return 1;
         }
 
 
