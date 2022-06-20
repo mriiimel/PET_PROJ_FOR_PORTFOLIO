@@ -3,31 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Pet_Proj
 {
+
     public class Enemy : Unit
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
+        [SerializeField] private Transform _target;
+        
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
-           
+            EnemyLook();
         }
-        float EnemyGetDamage(float Dameg)
+        private void EnemyLook()
         {
-            float m_enemyHealth = Health;
-            if (true) {
-                m_enemyHealth -= Dameg;
-                if (m_enemyHealth <= 0)
-                {
-
-                    gameObject.SetActive(false);
-                }
-            }
-            return 0;
+            //Vector3 toTarget = _target.position - transform.position;
+            //Vector3 toTargetXZ = new Vector3(toTarget.x, 0f, toTarget.z);
+            //transform.rotation = Quaternion.LookRotation(toTargetXZ);
+            transform.LookAt(_target);
         }
     }
 }

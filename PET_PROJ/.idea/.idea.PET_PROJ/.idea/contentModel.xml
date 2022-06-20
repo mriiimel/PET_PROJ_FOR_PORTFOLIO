@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\set43\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\set43\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_PET_PROJ.-1886512181.00" t="ExcludeRecursive" />
+    <e p="C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Asset" t="Include">
+          <e p="BrokenVector" t="Include">
+            <e p="LowPolyTreePack" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Supercyan Free Forest Sample" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Legacy" t="Include">
+                <e p="CelShader.shader" t="Include" />
+              </e>
+              <e p="SupercyanShader.shader" t="Include" />
+              <e p="SupercyanShaderLighting.cginc" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Samples" t="Include">
+          <e p="Terrain Tools" t="Include">
+            <e p="0.1.0-preview" t="Include">
+              <e p="Terrain Assets" t="Include">
+                <e p="ThirdPartyNotices.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Enemy.cs" t="Include" />
+          <e p="EnemySpawn.cs" t="Include" />
+          <e p="HealthSpawnManger.cs" t="Include" />
+          <e p="Hero Spawner.cs" t="Include" />
+          <e p="Hero.cs" t="Include" />
+          <e p="HeroSpawn.cs" t="Include" />
+          <e p="Unit.cs" t="Include" />
+        </e>
+        <e p="TestEnemySpawnManager.cs" t="Include" />
+        <e p="TestHeroSpawn.cs" t="Include" />
+        <e p="Toorel.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="PET_PROJ.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

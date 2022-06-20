@@ -1,4 +1,6 @@
 using UnityEngine;
+
+
 namespace Pet_Proj
 {
     public abstract class Unit : MonoBehaviour
@@ -8,5 +10,14 @@ namespace Pet_Proj
         public float Speed;
         public float RotationSpeed;
         
+        public void DoDamagee()
+        {
+            Health -= Damage;
+        }
+        public void GetDamage(float damage)
+        {
+            Health -= damage;
+        }
     }
+
 }

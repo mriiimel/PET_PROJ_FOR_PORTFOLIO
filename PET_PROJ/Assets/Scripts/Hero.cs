@@ -1,36 +1,40 @@
 using UnityEngine;
+
+
 namespace Pet_Proj
 {
     public class Hero : Unit
     {
         [SerializeField] private Rigidbody _rigidbody;
-        //[SerializeField] private GameObject _hero;
-        
 
-        void Start()
+
+        private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            
+            //var _vcam = GetComponent<CinemachineVirtualCamera>();
+            Damage = 100;
+            Health = 100;
         }
 
-        
-        void Update()
+
+        private void FixedUpdate()
         {
             HeroMove();
+            HeroRotate();
         }
-        void HeroMove()
+        private void HeroMove()
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
-            _rigidbody.velocity = new Vector3(horizontal, 0, vertical)*Speed*Time.deltaTime;
-            
+            Vector3 moveVector = transform.TransformDirection(horizontal, 0, vertical);
+            _rigidbody.velocity = new Vector3(moveVector.x * Speed, _rigidbody.velocity.y, moveVector.z * Speed);
         }
-        float HeroDoDamage(float HeroDamage)
+        private void HeroRotate()
         {
-
-            return 1;
+            float mouseInput = Input.GetAxis("Mouse X");
+            Vector3 vector = new Vector3(0f, mouseInput * RotationSpeed, 0f);
+            Quaternion deltaRotation = Quaternion.Euler(vector);
+            _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
-
-
     }
 }

@@ -1,21 +1,23 @@
 using UnityEngine;
 
 
-
-public class HeroSpawner : MonoBehaviour
+namespace Pet_Proj
 {
-    [SerializeField] private GameObject _hero;
-    void Start()
+    public class HeroSpawner : MonoBehaviour
     {
-        heroSpawner();
-    }
+        [SerializeField] private GameObject _hero;
+        
+
+        void Start()
+        {
+            heroSpawner();
+        }
 
 
-    public void heroSpawner()
-    {
-
-
-        Instantiate(_hero, transform.position, Quaternion.identity);
+        public void heroSpawner()
+        {
+            var Hero = Instantiate(_hero, transform.position, Quaternion.identity);
+        }
     }
 }
 

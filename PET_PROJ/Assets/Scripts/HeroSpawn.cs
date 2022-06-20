@@ -1,24 +1,25 @@
 using Cinemachine;
 using UnityEngine;
 
-public class HeroSpawn : MonoBehaviour
+
+namespace Pet_Proj
 {
-    // Start is called before the first frame update
-    [SerializeField] private GameObject _hero;
-    [SerializeField] private CinemachineVirtualCamera _vcam;
-    void Start()
+    public class HeroSpawn : MonoBehaviour
     {
-        heroSpawner();
-       
-    }
+        [SerializeField] private GameObject _hero;
+        [SerializeField] private Transform _spawn;
+        [SerializeField] private CinemachineVirtualCamera _vcam;
 
+        void Start()
+        {
+            heroSpawner();
+        }
+        public void heroSpawner()
+        {
+            var Hero = Instantiate(_hero, _spawn.position, Quaternion.identity);
+            _vcam.LookAt = Hero.transform;
+            _vcam.Follow = Hero.transform;
+        }
 
-    public void heroSpawner()
-    {
-        var Hero = Instantiate(_hero, transform.position, Quaternion.identity);
-        
-        _vcam.LookAt = Hero.transform;
-        _vcam.Follow = Hero.transform;
     }
-    
 }
