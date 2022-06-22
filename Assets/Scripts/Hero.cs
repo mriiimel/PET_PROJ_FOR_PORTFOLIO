@@ -11,7 +11,6 @@ namespace Pet_Proj
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            //var _vcam = GetComponent<CinemachineVirtualCamera>();
             Damage = 100;
             Health = 100;
         }

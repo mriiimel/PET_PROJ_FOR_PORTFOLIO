@@ -10,11 +10,11 @@ namespace Pet_Proj
         [SerializeField] private Transform _spawn;
         [SerializeField] private CinemachineVirtualCamera _vcam;
 
-        void Start()
+        private void Awake()
         {
             heroSpawner();
         }
-        public void heroSpawner()
+        private void heroSpawner()
         {
             var Hero = Instantiate(_hero, _spawn.position, Quaternion.identity);
             _vcam.LookAt = Hero.transform;

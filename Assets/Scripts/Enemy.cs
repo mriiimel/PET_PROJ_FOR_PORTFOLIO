@@ -6,7 +6,13 @@ namespace Pet_Proj
 
     public class Enemy : Unit
     {
-        [SerializeField] private Transform _target;
+        private GameObject _target;
+        public GameObject Target
+        {
+            get => _target;
+
+            set => _target = value;
+        }
         
 
         private void Update()
@@ -18,7 +24,7 @@ namespace Pet_Proj
             //Vector3 toTarget = _target.position - transform.position;
             //Vector3 toTargetXZ = new Vector3(toTarget.x, 0f, toTarget.z);
             //transform.rotation = Quaternion.LookRotation(toTargetXZ);
-            transform.LookAt(_target);
+            transform.LookAt(Target.transform);
         }
     }
 }

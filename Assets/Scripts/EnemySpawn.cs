@@ -8,44 +8,20 @@ namespace Pet_Proj
 {
     public class EnemySpawn : MonoBehaviour
     {
-        [SerializeField] private List<GameObject> _objPool;
-        //[SerializeField] private List<GameObject> _enemyGameObj;
-        [SerializeField] private GameObject _enemyGameObj;
-        [SerializeField] private int _spawnCount;
+        [SerializeField] private List<GameObject> _enemyObject;
         [SerializeField] private List<Transform> _enemySpawnPosition;
-        public Text _enemyCountText;
-        
-        
+
 
         private void Start()
         {
-            //_enemyGameObj = new List<GameObject>();
-            //_enemySpawnPosition = new List<Transform>();
-        }
-        private void Update()
-        {
-            Spawn();
-            //float m_enemyCount = _enemyGameObj.Count +1;
-            //_enemyCountText.text = $"Количество врагов: {m_enemyCount}";
-        }
-        private void Spawn()
-        {
-            for (int i = 0; i < _spawnCount; i++)
-            {
-                Instantiate(_enemyGameObj, transform.position, Quaternion.identity);
-                gameObject.SetActive(true);
-                _objPool.Add(_enemyGameObj);
-            }
+            var player = FindObjectOfType<Hero>();
 
-            //foreach (var item in _enemyGameObj)
-            //{
-            //    for (int i = 0; i < _spawnCount; i++)
-            //    {
-            //        Instantiate(item, transform.position, Quaternion.identity);
-            //        gameObject.SetActive(true);
-            //        _objPool.Add(item);
-            //    }
-            //}
+            foreach (var spawnPos in _enemySpawnPosition)
+            {
+                var random = Random.Range(0,_enemyObject.Count);
+                var enemy = Instantiate(_enemyObject[random], spawnPos.position,Quaternion.identity);
+                enemy.GetComponent<Enemy>().Target = player.gameObject;
+            }
         }
-    }
+    }   
 }
