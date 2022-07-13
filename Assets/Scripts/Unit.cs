@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System;
 
 namespace Pet_Proj
 {
@@ -9,12 +9,7 @@ namespace Pet_Proj
         public float Damage;
         public float Speed;
         public float RotationSpeed;
-        
        
-        public void GetDamage(float damage)
-        {
-            Health -= damage;
-        }
     }
 
 }

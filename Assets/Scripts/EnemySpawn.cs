@@ -1,27 +1,37 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 
 namespace Pet_Proj
 {
     public class EnemySpawn : MonoBehaviour
     {
-        [SerializeField] private List<GameObject> _enemyObject;
+        [SerializeField] private List<GameObject> _enemyObj;
         [SerializeField] private List<Transform> _enemySpawnPosition;
 
+        public Action DestroyEnemy;
+
+        public EnemySpawn(Action destroyEnemy)
+        {
+            DestroyEnemy = destroyEnemy;
+        }
 
         private void Start()
         {
-            var player = FindObjectOfType<Hero>();
-
+            Spawn();
+        }
+        private void Spawn()
+        {
+            var hero = FindObjectOfType<Hero>();
             foreach (var spawnPos in _enemySpawnPosition)
             {
-                var random = Random.Range(0,_enemyObject.Count);
-                var enemy = Instantiate(_enemyObject[random], spawnPos.position,Quaternion.identity);
-                enemy.GetComponent<Enemy>().Target = player.gameObject;
+                var random = UnityEngine.Random.Range(0, _enemyObj.Count);
+                var m_enemy = Instantiate(_enemyObj[random], spawnPos.position, Quaternion.identity);
+                m_enemy.GetComponent<Enemy>().Target = hero.gameObject;
             }
+
         }
-    }   
+    }
 }

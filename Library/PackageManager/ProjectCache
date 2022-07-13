@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637913338332479079
-    m_Hash: 3134445628
+      ticks: 637924604699488092
+    m_Hash: 1065002920
   m_LockFileStatus:
     m_FilePath: C:/Users/set43/Documents/GitHub/PET_PROJ_FOR_PORTFOLIO/PET_PROJ/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637913338332674225
-    m_Hash: 4040051082
+      ticks: 637924605107394403
+    m_Hash: 2785013249
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/set43/Documents/GitHub/PET_PROJ_FOR_PORTFOLIO/PET_PROJ/Packages
-m_EditorVersion: 2021.3.4f1 (cb45f9cae8b7)
+m_EditorVersion: 2021.3.5f1 (40eb3a945986)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -73,12 +73,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.cinemachine@2.8.4
+- packageId: com.unity.cinemachine@2.8.6
   testable: 0
   isDirectDependency: 1
-  version: 2.8.4
+  version: 2.8.6
   source: 1
-  resolvedPath: C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ\Library\PackageCache\com.unity.cinemachine@2.8.4
+  resolvedPath: C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ\Library\PackageCache\com.unity.cinemachine@2.8.6
   assetPath: Packages/com.unity.cinemachine
   name: com.unity.cinemachine
   displayName: Cinemachine
@@ -156,7 +156,6 @@ m_ResolvedPackages:
     - 2.9.0-pre.1
     - 2.9.0-pre.6
     compatible:
-    - 2.8.4
     - 2.8.6
     - 2.9.0-pre.1
     - 2.9.0-pre.6
@@ -195,23 +194,23 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637755930770000000
+  datePublishedTicks: 637891007790000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
-    revision: 15a386e047f93d18479f6ae075bd3dcc985d3c34
+    revision: 5e26d3cd08865a98219c0d2d3a8cc689018dd75b
     path: 
   unityLifecycle:
-    version: 2.8.4
+    version: 2.8.6
     nextVersion: 
-- packageId: com.unity.collab-proxy@1.15.17
+- packageId: com.unity.collab-proxy@1.15.18
   testable: 0
   isDirectDependency: 1
-  version: 1.15.17
+  version: 1.15.18
   source: 1
-  resolvedPath: C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ\Library\PackageCache\com.unity.collab-proxy@1.15.17
+  resolvedPath: C:\Users\set43\Documents\GitHub\PET_PROJ_FOR_PORTFOLIO\PET_PROJ\Library\PackageCache\com.unity.collab-proxy@1.15.18
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -276,6 +275,7 @@ m_ResolvedPackages:
     - 1.15.16
     - 1.15.17
     - 1.15.18
+    - 1.17.0
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -287,8 +287,8 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.15.17
     - 1.15.18
+    - 1.17.0
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -335,16 +335,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637871149130000000
+  datePublishedTicks: 637888962690000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: fd95d00c5a7961beec85ee190181439d53fb0dba
+    revision: 611215dcd30048fa921b4be160048bad4022d65f
     path: 
   unityLifecycle:
-    version: 1.15.17
+    version: 1.15.18
     nextVersion: 
 - packageId: com.unity.ide.rider@3.0.14
   testable: 0
@@ -398,9 +398,11 @@ m_ResolvedPackages:
     - 3.0.12
     - 3.0.13
     - 3.0.14
+    - 3.0.15
     compatible:
     - 3.0.14
-    verified: 3.0.14
+    - 3.0.15
+    verified: 3.0.15
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -468,9 +470,11 @@ m_ResolvedPackages:
     - 2.0.12
     - 2.0.14
     - 2.0.15
+    - 2.0.16
     compatible:
     - 2.0.15
-    verified: 2.0.15
+    - 2.0.16
+    verified: 2.0.16
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9

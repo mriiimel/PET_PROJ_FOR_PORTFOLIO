@@ -7,10 +7,13 @@ namespace Pet_Proj
 {
     public class HealthBonuce : MonoBehaviour
     {
-        [SerializeField] private GameObject _healthObj;
+        [SerializeField] private GameObject _healthObject;
         [SerializeField] private float _maxTime;
         [SerializeField] private float _lifeTime;
         [SerializeField] private float _healthBonuce;
+        
+
+        private Hero _heroHP;
         void Start()
         {
             StartCoroutine(HealthSpawnCD());
@@ -19,23 +22,36 @@ namespace Pet_Proj
         {
             while (true)
             {
+                if (_healthObject.activeSelf == false)
+                {
+                    yield return new WaitForSeconds(_maxTime);
+                    _healthObject.SetActive(true);
+
+                }
                 yield return new WaitForSeconds(_lifeTime);
-                _healthObj.SetActive(false);
-                StartCoroutine(LifeTime());
+                _healthObject.SetActive(false);
+                yield return new WaitForSeconds(_maxTime);
+                _healthObject.SetActive(true);
             }
         }
-        private IEnumerator LifeTime()
-        {
-            yield return new WaitForSeconds(_maxTime);
-            _healthObj.SetActive(true);
-        }
+        
         private void OnTriggerEnter(Collider other)
         {
-            if(other == FindObjectOfType<Hero>())
+            if (other.gameObject.CompareTag("Player"))
             {
-                var heroHP = GetComponent<Hero>();
-                heroHP.Health += _healthBonuce;
+                _heroHP = other.gameObject.GetComponent<Hero>();
+                _heroHP.CurrentHealth += _healthBonuce;
+                
+                if (_heroHP.CurrentHealth > _heroHP.Health)
+                {
+                    _heroHP.CurrentHealth = _heroHP.Health;
+                }
+                _healthObject.SetActive(false);
             }
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            _heroHP = null;
         }
     }
 }
