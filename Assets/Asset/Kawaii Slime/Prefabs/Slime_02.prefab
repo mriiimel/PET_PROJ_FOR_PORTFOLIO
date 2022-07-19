@@ -74,8 +74,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3278883554580211484}
   - component: {fileID: 6825751190570508348}
-  - component: {fileID: 1636746088960543369}
   - component: {fileID: 5855139842096896216}
+  - component: {fileID: 8975779027402854446}
   m_Layer: 0
   m_Name: Slime_02
   m_TagString: Enemy
@@ -116,19 +116,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!135 &1636746088960543369
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2795397902362475942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.30685422
-  m_Center: {x: -0.002861023, y: 0.28268442, z: 0}
 --- !u!135 &5855139842096896216
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -142,6 +129,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.30461487
   m_Center: {x: -0.002861023, y: 0.2804457, z: 0}
+--- !u!135 &8975779027402854446
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2795397902362475942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.37216052
+  m_Center: {x: 0.0052769184, y: 0.35613683, z: -0.0000074505806}
 --- !u!1 &2988591986747077261
 GameObject:
   m_ObjectHideFlags: 0

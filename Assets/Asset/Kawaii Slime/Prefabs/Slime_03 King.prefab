@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 3467851699220123360}
   - component: {fileID: 4076406930735274201}
   - component: {fileID: 2444689328469319077}
-  - component: {fileID: 6902542088645447707}
+  - component: {fileID: 1463215099048453157}
   m_Layer: 0
   m_Name: Slime_03 King
   m_TagString: Enemy
@@ -194,7 +194,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.305425
   m_Center: {x: -0.002861023, y: 0.2812553, z: 0}
---- !u!135 &6902542088645447707
+--- !u!135 &1463215099048453157
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,8 +205,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.32998824
-  m_Center: {x: -0.002861023, y: 0.3058192, z: 0}
+  m_Radius: 0.37216052
+  m_Center: {x: 0.0052769184, y: 0.35613683, z: -0.0000074505806}
 --- !u!1 &6226777814166338176
 GameObject:
   m_ObjectHideFlags: 0

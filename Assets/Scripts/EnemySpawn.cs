@@ -9,7 +9,10 @@ namespace Pet_Proj
     public class EnemySpawn : MonoBehaviour
     {
         [SerializeField] private List<GameObject> _enemyObj;
+        [Space(10)]
         [SerializeField] private List<Transform> _enemySpawnPosition;
+        [Space(10)]
+        //[SerializeField] private int _totalEnemy = 0;
 
         public Action DestroyEnemy;
 
@@ -27,6 +30,7 @@ namespace Pet_Proj
             var hero = FindObjectOfType<Hero>();
             foreach (var spawnPos in _enemySpawnPosition)
             {
+                
                 var random = UnityEngine.Random.Range(0, _enemyObj.Count);
                 var m_enemy = Instantiate(_enemyObj[random], spawnPos.position, Quaternion.identity);
                 m_enemy.GetComponent<Enemy>().Target = hero.gameObject;

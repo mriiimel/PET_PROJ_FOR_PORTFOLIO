@@ -240,6 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2066896392038131496}
   - component: {fileID: 7724863413859538155}
+  - component: {fileID: 8910240896576880091}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Shield
@@ -276,6 +277,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.10595387, y: 0.6527017, z: 0.5812175}
   m_Center: {x: -0.066450305, y: 0.061112493, z: -0.00000017892765}
+--- !u!114 &8910240896576880091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066896392038628040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a596a7d2d10224d831024ed3c2791e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2066896392038628042
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2066896392038131398}
   - component: {fileID: 645292685507415263}
+  - component: {fileID: 3024515349908196561}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Weapon
@@ -891,6 +905,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16247936, y: 1.0226735, z: 0.075077206}
   m_Center: {x: -0.0046005244, y: 0.68267936, z: 0.000000723815}
+--- !u!114 &3024515349908196561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066896392038628070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6faa432b647cea4ba9adb59f688befd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2066896392038628072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,10 +1489,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.3821926
+  m_Radius: 0.52196085
   m_Height: 1.4200554
   m_Direction: 1
-  m_Center: {x: 0, y: 0.73620796, z: 0.0010890961}
+  m_Center: {x: -0.01488173, y: 0.73620796, z: -0.020748675}
 --- !u!54 &7489321782599436694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1496,7 +1522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  Damage: 100100
+  Damage: 1
   Speed: 3
   RotationSpeed: 1
   _rigidbody: {fileID: 7489321782599436694}

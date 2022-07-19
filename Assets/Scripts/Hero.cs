@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 namespace Pet_Proj
 {
@@ -7,18 +7,12 @@ namespace Pet_Proj
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Animator _animator;
-       
-        private float _currentHealth;
-        public float CurrentHealth
-        {
-            get => _currentHealth; 
-            set => _currentHealth = value;
-        }
+        public float CurrentHealth { get; set; }
+
 
         private void Start()
         {
-            _currentHealth = Health;
-            //Attack();
+            CurrentHealth = Health;
         }
 
 
@@ -26,7 +20,7 @@ namespace Pet_Proj
         {
             HeroMove();
             HeroRotate();
-            Attack();
+            CurrentHP();
         }
         private void HeroMove()
         {
@@ -43,13 +37,29 @@ namespace Pet_Proj
             Quaternion deltaRotation = Quaternion.Euler(vectorX);
             _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
-        private void Attack()
+       
+        private void OnTriggerEnter(Collider other)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                _animator.Play("Attack01");
-            }
             
+            var m_enemyObj = FindObjectOfType<Enemy>();
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                var enemyDMG = m_enemyObj.GetComponent<Enemy>().Damage;
+                TakeDamage(enemyDMG);
+            }
+        }
+        private void TakeDamage(float damage)
+        {
+            CurrentHealth -= damage;
+            Debug.Log(CurrentHealth);
+            if (CurrentHealth <= 0)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
+        private void CurrentHP()
+        {
+            if(CurrentHealth > Health) CurrentHealth = Health;
         }
     }
 }

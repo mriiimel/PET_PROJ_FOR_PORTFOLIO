@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2821659471103554755}
   - component: {fileID: 7842161665529787555}
-  - component: {fileID: 2341308610542937495}
   - component: {fileID: 8285582337063630582}
+  - component: {fileID: 7210367688990926481}
   m_Layer: 0
   m_Name: Slime_01_MeltalHelmet
   m_TagString: Enemy
@@ -147,19 +147,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!135 &2341308610542937495
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3198502390492704377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.32998824
-  m_Center: {x: -0.002861023, y: 0.3058192, z: 0}
 --- !u!135 &8285582337063630582
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -173,6 +160,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.25963593
   m_Center: {x: -0.002861023, y: 0.235466, z: 0}
+--- !u!135 &7210367688990926481
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198502390492704377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.37216052
+  m_Center: {x: 0.0052769184, y: 0.35613683, z: -0.0000074505806}
 --- !u!1 &4223262636022095585
 GameObject:
   m_ObjectHideFlags: 0

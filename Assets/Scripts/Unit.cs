@@ -9,7 +9,5 @@ namespace Pet_Proj
         public float Damage;
         public float Speed;
         public float RotationSpeed;
-       
     }
-
 }

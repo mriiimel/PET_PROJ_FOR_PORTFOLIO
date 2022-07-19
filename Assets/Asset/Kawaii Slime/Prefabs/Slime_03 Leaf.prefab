@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 6118174221721670358}
   - component: {fileID: 4953351349099873739}
   - component: {fileID: 5053219530350419348}
-  - component: {fileID: 6531130125568647755}
+  - component: {fileID: 4674258500509585228}
   m_Layer: 0
   m_Name: Slime_03 Leaf
   m_TagString: Enemy
@@ -282,7 +282,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.25963593
   m_Center: {x: -0.002861023, y: 0.235466, z: 0}
---- !u!135 &6531130125568647755
+--- !u!135 &4674258500509585228
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,8 +293,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25963593
-  m_Center: {x: -0.002861023, y: 0.235466, z: 0}
+  m_Radius: 0.37216052
+  m_Center: {x: 0.0052769184, y: 0.35613683, z: -0.0000074505806}
 --- !u!1 &7647819984296596885
 GameObject:
   m_ObjectHideFlags: 0

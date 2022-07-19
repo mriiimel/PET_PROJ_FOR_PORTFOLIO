@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 6312573360258431772}
   - component: {fileID: 6183486695088286208}
   - component: {fileID: 7807241143387156539}
-  - component: {fileID: 9018512501799590679}
+  - component: {fileID: 4107727453062195617}
   m_Layer: 0
   m_Name: Slime_01_Viking
   m_TagString: Enemy
@@ -282,7 +282,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.31799164
   m_Center: {x: -0.0045940084, y: 0.24870762, z: 0}
---- !u!135 &9018512501799590679
+--- !u!135 &4107727453062195617
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,8 +293,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.30424693
-  m_Center: {x: -0.002861023, y: 0.26925212, z: 0}
+  m_Radius: 0.37216052
+  m_Center: {x: 0.0052769184, y: 0.35613683, z: -0.0000074505806}
 --- !u!1 &7588663013591350367
 GameObject:
   m_ObjectHideFlags: 0

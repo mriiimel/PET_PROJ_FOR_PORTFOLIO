@@ -13,7 +13,7 @@ namespace Pet_Proj
         [SerializeField] private float _healthBonuce;
         
 
-        private Hero _heroHP;
+        
         void Start()
         {
             StartCoroutine(HealthSpawnCD());
@@ -39,19 +39,9 @@ namespace Pet_Proj
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                _heroHP = other.gameObject.GetComponent<Hero>();
-                _heroHP.CurrentHealth += _healthBonuce;
-                
-                if (_heroHP.CurrentHealth > _heroHP.Health)
-                {
-                    _heroHP.CurrentHealth = _heroHP.Health;
-                }
+                other.gameObject.GetComponent<Hero>().CurrentHealth += _healthBonuce;
                 _healthObject.SetActive(false);
             }
-        }
-        private void OnTriggerExit(Collider other)
-        {
-            _heroHP = null;
         }
     }
 }
