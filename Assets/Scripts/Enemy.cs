@@ -1,6 +1,5 @@
 using UnityEngine.AI;
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Pet_Proj
@@ -42,6 +41,8 @@ namespace Pet_Proj
                 Vector3 toTargetXZ = new Vector3(toTarget.x, 0f, toTarget.z);
 
                 transform.rotation = Quaternion.LookRotation(toTargetXZ * RotationSpeed * Time.deltaTime);
+
+                AttackToHero(disToHero);
             }
         }
         private void OnTriggerEnter(Collider other)
@@ -62,17 +63,32 @@ namespace Pet_Proj
                 m_EnemyObj.SetActive(false);
                 
                 killMG.EnemiKilled++;
-                if (m_EnemyObj.activeSelf == false)
-                {
-                    StartCoroutine(ReloadEnemy());
-                }
+                //if (m_EnemyObj.activeSelf == false)
+                //{
+                //    StartCoroutine(ReloadEnemy());
+                //}
             }
         }
 
-        IEnumerator ReloadEnemy()
+        //IEnumerator ReloadEnemy()
+        //{
+        //    yield return new WaitForSeconds(5);
+        //    m_EnemyObj.SetActive(true);
+        //}
+        private void AttackToHero(float DisToAttak)
         {
-            yield return new WaitForSeconds(5);
-            m_EnemyObj.SetActive(true);
+            if (DisToAttak < _distToAttak)
+            {
+                _navMesh.SetDestination(Target.transform.position);
+            }
+            else
+            {
+                foreach (var pos in _pointPosition)
+                {
+                    _navMesh.SetDestination(pos.transform.position);
+                }
+            }
+            
         }
     }
 }
