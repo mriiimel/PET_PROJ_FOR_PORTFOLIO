@@ -12,13 +12,8 @@ namespace Pet_Proj
         [SerializeField] private GameObject m_EnemyObj;
         [Space(10)]
         [SerializeField] private float _distToAttak;
-        [Space(10)]
-        [SerializeField] private List<Transform> _pointPosition;
-       
-
 
         private GameObject _target;
-       
 
         public GameObject Target
         {
@@ -26,7 +21,7 @@ namespace Pet_Proj
 
             set => _target = value;
         }
-        
+
         private void Update()
         {
             EnemyLook();
@@ -61,7 +56,7 @@ namespace Pet_Proj
             if (Health <= 0)
             {
                 m_EnemyObj.SetActive(false);
-                
+
                 killMG.EnemiKilled++;
                 //if (m_EnemyObj.activeSelf == false)
                 //{
@@ -70,25 +65,14 @@ namespace Pet_Proj
             }
         }
 
-        //IEnumerator ReloadEnemy()
-        //{
-        //    yield return new WaitForSeconds(5);
-        //    m_EnemyObj.SetActive(true);
-        //}
+
         private void AttackToHero(float DisToAttak)
         {
             if (DisToAttak < _distToAttak)
             {
                 _navMesh.SetDestination(Target.transform.position);
             }
-            else
-            {
-                foreach (var pos in _pointPosition)
-                {
-                    _navMesh.SetDestination(pos.transform.position);
-                }
-            }
-            
         }
+        
     }
 }

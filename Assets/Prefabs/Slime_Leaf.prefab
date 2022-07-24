@@ -53,7 +53,6 @@ MonoBehaviour:
   _navMesh: {fileID: -8925705172817595540}
   m_EnemyObj: {fileID: 6928712723151320962}
   _distToAttak: 10
-  _pointPosition: []
 --- !u!195 &-8925705172817595540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -68,7 +67,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.1
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

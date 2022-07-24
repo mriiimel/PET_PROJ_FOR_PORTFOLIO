@@ -1,19 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 namespace Pet_Proj
 {
     public class AIpoints : MonoBehaviour
     {
-        public List<Transform> Points;
+        [SerializeField] Transform[] Points;
         public void AiPoints()
         {
-            foreach (var item in Points)
+            var m_enemy = GetComponent<Enemy>();
+            var m_agent = m_enemy.GetComponent<NavMeshAgent>();
+            if (!m_agent.pathPending)
             {
-
+                var index = Random.Range(0, Points.Length);
+                m_agent.destination = Points[index].position;
             }
+        }
+        private void Update()
+        {
+            AiPoints();
         }
     }
 }
