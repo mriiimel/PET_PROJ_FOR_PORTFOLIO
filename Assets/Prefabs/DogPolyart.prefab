@@ -284,11 +284,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066896392038628040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50a596a7d2d10224d831024ed3c2791e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DefColl: {fileID: 7724863413859538155}
 --- !u!1 &2066896392038628042
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +872,7 @@ GameObject:
   - component: {fileID: 3024515349908196561}
   m_Layer: 0
   m_Name: Weapon
-  m_TagString: Weapon
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,7 +904,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.16247936, y: 1.0226735, z: 0.075077206}
+  m_Size: {x: 0.16247936, y: 0.92, z: 0.075077206}
   m_Center: {x: -0.0046005244, y: 0.68267936, z: 0.000000723815}
 --- !u!114 &3024515349908196561
 MonoBehaviour:
@@ -912,11 +913,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066896392038628070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6faa432b647cea4ba9adb59f688befd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_coll: {fileID: 645292685507415263}
 --- !u!1 &2066896392038628072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,7 +1524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  Damage: 1
+  Damage: 100
   Speed: 3
   RotationSpeed: 1
   _rigidbody: {fileID: 7489321782599436694}
@@ -2876,10 +2878,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: b96201848d117da4ca7dc3ade4bd59de, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 421140039854e8c42938a8cb73d3480c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b96201848d117da4ca7dc3ade4bd59de, type: 3}
 --- !u!4 &3951229398020510376 stripped

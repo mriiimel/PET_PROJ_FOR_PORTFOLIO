@@ -13,6 +13,7 @@ namespace Pet_Proj
         private void Start()
         {
             CurrentHealth = Health;
+            Cursor.visible = false;
         }
 
 
@@ -37,12 +38,12 @@ namespace Pet_Proj
             Quaternion deltaRotation = Quaternion.Euler(vectorX);
             _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
-       
+
         private void OnTriggerEnter(Collider other)
         {
-            
+
             var m_enemyObj = FindObjectOfType<Enemy>();
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("EnemyKys"))
             {
                 var enemyDMG = m_enemyObj.GetComponent<Enemy>().Damage;
                 TakeDamage(enemyDMG);
@@ -51,7 +52,7 @@ namespace Pet_Proj
         private void TakeDamage(float damage)
         {
             CurrentHealth -= damage;
-            Debug.Log(CurrentHealth);
+            
             if (CurrentHealth <= 0)
             {
                 SceneManager.LoadScene("MainMenu");
@@ -61,5 +62,6 @@ namespace Pet_Proj
         {
             if(CurrentHealth > Health) CurrentHealth = Health;
         }
+       
     }
 }

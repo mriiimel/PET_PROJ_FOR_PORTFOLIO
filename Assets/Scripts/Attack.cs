@@ -1,12 +1,20 @@
-
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    [SerializeField] private Collider m_coll;
     
-    void Start()
+    void Update()
     {
-        gameObject.GetComponent<Collider>().enabled = false;
+        
+        
+        if(Input.GetMouseButtonDown(0))
+        {
+            m_coll.enabled = true;
+        }else if (Input.GetMouseButtonDown(1))
+        {
+            m_coll.enabled = false;
+        }
     }
 
     

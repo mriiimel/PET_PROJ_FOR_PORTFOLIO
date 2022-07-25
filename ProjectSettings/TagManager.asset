@@ -5,10 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Weapon
   - Shield
   - HeroBody
   - Kill Manager
+  - EnemyKys
+  - Sword
+  - Weapon
   layers:
   - Default
   - TransparentFX

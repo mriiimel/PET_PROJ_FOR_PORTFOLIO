@@ -1,6 +1,6 @@
 using UnityEngine.AI;
 using UnityEngine;
-using System.Collections.Generic;
+
 
 namespace Pet_Proj
 {
@@ -42,9 +42,10 @@ namespace Pet_Proj
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("Weapon"))
+
+            if (other.gameObject.CompareTag(tag:"Sword"))
             {
-                var damage = Target.GetComponent<Hero>().Damage;
+                var damage = _target.GetComponent<Hero>().Damage;
                 TakeDamage(damage);
             }
         }
@@ -52,16 +53,13 @@ namespace Pet_Proj
         private void TakeDamage(float damage)
         {
             Health -= damage;
+            Debug.Log(Health);
             var killMG = FindObjectOfType<KillManager>();
             if (Health <= 0)
             {
                 m_EnemyObj.SetActive(false);
 
                 killMG.EnemiKilled++;
-                //if (m_EnemyObj.activeSelf == false)
-                //{
-                //    StartCoroutine(ReloadEnemy());
-                //}
             }
         }
 
@@ -71,8 +69,13 @@ namespace Pet_Proj
             if (DisToAttak < _distToAttak)
             {
                 _navMesh.SetDestination(Target.transform.position);
+
+                if (Vector3.Distance(gameObject.transform.position, Target.transform.position) == _navMesh.stoppingDistance)
+                {
+                    _navMesh.isStopped = true;
+                }
             }
         }
-        
+
     }
 }
