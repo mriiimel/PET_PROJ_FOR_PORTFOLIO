@@ -1,21 +1,21 @@
 using UnityEngine;
 
-public class Attack : MonoBehaviour
-{
-    [SerializeField] private Collider m_coll;
-    
-    void Update()
+namespace Pet_Proj {
+    public class Attack : MonoBehaviour
     {
-        
-        
-        if(Input.GetMouseButtonDown(0))
-        {
-            m_coll.enabled = true;
-        }else if (Input.GetMouseButtonDown(1))
-        {
-            m_coll.enabled = false;
-        }
-    }
+        [SerializeField] private Collider m_coll;
+        private float _damage;
 
-    
+        public float Damage { get => _damage; private set => _damage = value; }
+
+        private void Start()
+        {
+            var m_hero = FindObjectOfType<Hero>();
+            _damage = m_hero.Damage;
+        }
+
+
+
+
+    }
 }

@@ -9,8 +9,6 @@ namespace Pet_Proj
     {
         [SerializeField] private NavMeshAgent _navMesh;
         [Space(10)]
-        [SerializeField] private GameObject m_EnemyObj;
-        [Space(10)]
         [SerializeField] private float _distToAttak;
 
         private GameObject _target;
@@ -21,7 +19,12 @@ namespace Pet_Proj
 
             set => _target = value;
         }
+        private float m_currentHealth;
 
+        private void Awake()
+        {
+            m_currentHealth = Health;
+        }
         private void Update()
         {
             EnemyLook();
@@ -42,22 +45,22 @@ namespace Pet_Proj
         }
         private void OnTriggerEnter(Collider other)
         {
-
-            if (other.gameObject.CompareTag(tag:"Sword"))
+            
+            if (other.gameObject.CompareTag("Sword"))
             {
-                var damage = _target.GetComponent<Hero>().Damage;
+                var damage = FindObjectOfType<Attack>().Damage;
                 TakeDamage(damage);
             }
         }
 
         private void TakeDamage(float damage)
         {
-            Health -= damage;
-            Debug.Log(Health);
+            m_currentHealth -= damage;
+            Debug.Log(m_currentHealth);
             var killMG = FindObjectOfType<KillManager>();
-            if (Health <= 0)
+            if (m_currentHealth <= 0)
             {
-                m_EnemyObj.SetActive(false);
+                gameObject.SetActive(false);
 
                 killMG.EnemiKilled++;
             }

@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7099655024501674457}
-  - component: {fileID: 2386459200604213431}
   - component: {fileID: 7634293903818417158}
-  - component: {fileID: 1710838440998829947}
   m_Layer: 0
   m_Name: Slime_03 Sprout
   m_TagString: Enemy
@@ -37,22 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2386459200604213431
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7099655024501674456}
-  serializedVersion: 2
-  m_Mass: 100
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!135 &7634293903818417158
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66,19 +48,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.3005849
   m_Center: {x: 0, y: 0.28, z: 0}
---- !u!135 &1710838440998829947
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7099655024501674456}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.43
-  m_Center: {x: 0, y: 0.39, z: 0}
 --- !u!1 &7099655024573255015
 GameObject:
   m_ObjectHideFlags: 0
