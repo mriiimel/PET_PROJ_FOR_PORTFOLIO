@@ -49,21 +49,21 @@ namespace Pet_Proj
 
             if (horizontal != 0 || vertical != 0)
             {
-                AnimHero(WALK_FORWARD);
-                //_isWalkbl = true;
+                _animator.Play(WALK_FORWARD);
             }
             else
             {
-                AnimHero(IDILE_BATTLE);
-                //_isWalkbl = false;
+                _animator.Play(IDILE_BATTLE);
+
             }
-            //Посмотреть работу со слоями анимации для параллельной работы анимации 
-            //if (Input.GetKeyDown(KeyCode.Mouse0) & !_isWalkbl)
-            //{
-            //    AnimHero(ATTACK_ONE);
-            //}
-            //else
-            //    AnimHero(IDILE_BATTLE);
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                _animator.Play(ATTACK_ONE);
+
+            }
+
+
         }
         private void HeroRotate()
         {
@@ -99,13 +99,5 @@ namespace Pet_Proj
             if (CurrentHealth > Health) CurrentHealth = Health;
         }
         #endregion
-
-        private void AnimHero(string m_newAnimation)
-        {
-            if (m_CurrentState == m_newAnimation) return;
-            _animator.Play(m_newAnimation);
-            m_CurrentState = m_newAnimation;
-        }
-        
     }
 }
