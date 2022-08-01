@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System;
 
 namespace Pet_Proj
 {
@@ -7,7 +8,7 @@ namespace Pet_Proj
     {
         [SerializeField] private Canvas _settingsCanvas;
 
-        
+
         private void Awake()
         {
             _settingsCanvas.enabled = false;
@@ -30,18 +31,8 @@ namespace Pet_Proj
         {
             _settingsCanvas.enabled = true;
         }
-        public void EnemyDifEasy(float m_enemyHealth, float m_enemyDamage,float m_enemySpeed)
-        {
-           
-        }
-        public void EnemyDifNormal(float m_enemyHealth, float m_enemyDamage, float m_enemySpeed)
-        {
-            
-        }
-        public void EnemyDifHard(float m_enemyHealth, float m_enemyDamage, float m_enemySpeed)
-        {
-            
-        }
+        
+
         
     }
 }

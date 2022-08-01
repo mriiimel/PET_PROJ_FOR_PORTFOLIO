@@ -1,6 +1,7 @@
 using UnityEngine;
 
-namespace Pet_Proj {
+namespace Pet_Proj
+{
     public class Attack : MonoBehaviour
     {
         [SerializeField] private Collider m_coll;
@@ -13,9 +14,5 @@ namespace Pet_Proj {
             var m_hero = FindObjectOfType<Hero>();
             _damage = m_hero.Damage;
         }
-
-
-
-
     }
 }

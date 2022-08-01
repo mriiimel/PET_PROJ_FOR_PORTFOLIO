@@ -344,6 +344,7 @@
 "Assets/Asset/Kawaii Slime/Scripts/AI/EnemyAi.cs"
 "Assets/Asset/Kawaii Slime/Scripts/AI/Face.cs"
 "Assets/Asset/Kawaii Slime/Scripts/GameManager.cs"
+"Assets/Scripts/AnimatinManager.cs"
 "Assets/Scripts/Attack.cs"
 "Assets/Scripts/Defence.cs"
 "Assets/Scripts/Enemy.cs"

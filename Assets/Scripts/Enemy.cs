@@ -56,7 +56,7 @@ namespace Pet_Proj
         private void TakeDamage(float damage)
         {
             m_currentHealth -= damage;
-            Debug.Log(m_currentHealth);
+            
             var killMG = FindObjectOfType<KillManager>();
             if (m_currentHealth <= 0)
             {
