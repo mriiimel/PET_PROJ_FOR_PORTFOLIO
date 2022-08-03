@@ -59,9 +59,9 @@ namespace Pet_Proj
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                _animator.Play(ATTACK_ONE);
+                _animator.SetBool("Attack", true);
 
-            }
+            }else _animator.SetBool("Attack", false);
 
 
         }
