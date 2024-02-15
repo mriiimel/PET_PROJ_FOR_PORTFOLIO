@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1705052046101418587}
   - component: {fileID: -4274465214206333274}
   - component: {fileID: 1152940660367639280}
+  - component: {fileID: -5157402671138003980}
+  - component: {fileID: 532907676811171816}
   m_Layer: 0
   m_Name: Slime_Viking
   m_TagString: Enemy
@@ -43,7 +45,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000431928242684169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b354822d7e0106141a3961526e2feb51, type: 3}
   m_Name: 
@@ -53,7 +55,6 @@ MonoBehaviour:
   Speed: 1
   RotationSpeed: 0.1
   _navMesh: {fileID: -4274465214206333274}
-  m_EnemyObj: {fileID: 2676262812445556357}
   _distToAttak: 10
 --- !u!195 &-4274465214206333274
 NavMeshAgent:
@@ -85,11 +86,43 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000431928242684169}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 0.32
   m_Center: {x: 0, y: 0.23, z: 0}
+--- !u!114 &-5157402671138003980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000431928242684169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcbf7ff892e93d4ab68a2682889479a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &532907676811171816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000431928242684169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcbf7ff892e93d4ab68a2682889479a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3191651948737014344
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,9 +163,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3191651948737014344}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.27791852, y: 0.20410888, z: 0.06708908}
   m_Center: {x: 0.016491413, y: -0.087147556, z: -0.027979374}
 --- !u!1001 &8787343603587079971
@@ -140,6 +181,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6541243537986405809}
     m_Modifications:
     - target: {fileID: 6312573360258431772, guid: 11eed2dfd1329ab4db9e7f27b8e628b7, type: 3}
@@ -191,12 +233,10 @@ PrefabInstance:
       value: Slime_01_Viking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11eed2dfd1329ab4db9e7f27b8e628b7, type: 3}
---- !u!1 &2676262812445556357 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6688149642241925542, guid: 11eed2dfd1329ab4db9e7f27b8e628b7, type: 3}
-  m_PrefabInstance: {fileID: 8787343603587079971}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3343973806318806079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6312573360258431772, guid: 11eed2dfd1329ab4db9e7f27b8e628b7, type: 3}
