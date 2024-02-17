@@ -1,36 +1,39 @@
 using UnityEngine;
 
 
-public class PlayerController : IAttackable,IMovable,IGetDamage
+public class PlayerController : PlayerBase
 {
-    private Rigidbody _heroRigidbody;
-    private Vector3 _moveVector = Vector3.zero;
-    private float _speed;
-
-
-    public PlayerController(Rigidbody heroRigidbody, float speed)
+    public float PlayerSpeed
     {
-        _heroRigidbody = heroRigidbody;
-        _speed = speed;
-    }
-    
-    public void Attack()
-    {
-        
+        get => _speed;
     }
 
-    
-    public void Move()
+    public Collider PlayerCollider
     {
-        var horizontal = Input.GetAxis("Horizontal");
-        var vertical = Input.GetAxis("Vertical");
-        _moveVector = new Vector3(horizontal,0,vertical);
-        _heroRigidbody.velocity = new Vector3(_moveVector.x*_speed,_heroRigidbody.velocity.y,_moveVector.z*_speed);
+        get => _colliderPl;
     }
 
-    public void GetDamage()
+    public Rigidbody PlayerRB 
     {
-        
+        get => _rigidbodyPl;
+    }
+
+    private Vector3 _movement;
+
+    private void Awake()
+    {
+        _moveDirection = new Vector3();
+    }
+
+    private void Update()
+    {
+        _movement = _moveDirection;
+        CalculateMovementInputSmoothing(_movement);
+    }
+
+    private void FixedUpdate()
+    {
+        PlayerMove(_movement);
     }
     
     
