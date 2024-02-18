@@ -8,11 +8,12 @@ public abstract class PlayerBase : MonoBehaviour, IPlayer
 {
     [SerializeField] protected Rigidbody _rigidbodyPl;
     [SerializeField] protected Collider _colliderPl;
-    [SerializeField] protected CinemachineVirtualCamera _cinemachineVirtualCamera;
+    [SerializeField] protected CinemachineVirtualCamera _vCam;
     [SerializeField] protected PlayerInput _playerInput;
     [SerializeField] protected float _speed;
 
     protected Vector3 _moveDirection;
+    protected Vector3 _moveRotation;
     
     public void OnMove(InputAction.CallbackContext value)
     {
@@ -30,4 +31,17 @@ public abstract class PlayerBase : MonoBehaviour, IPlayer
         _moveDirection = Vector3.Lerp(movement, _moveDirection, Time.deltaTime * _speed);
 
     }
+
+    public void PlayerRotate(InputAction.CallbackContext value) 
+    {
+        _moveRotation = value.ReadValue<Vector2>();
+        Quaternion rotate = Quaternion.Euler(0,_moveRotation.x, 0);
+        _rigidbodyPl.MoveRotation(rotate);
+    }
+    protected void CameraRotate()
+    {
+       
+    }
+
+   
 }
