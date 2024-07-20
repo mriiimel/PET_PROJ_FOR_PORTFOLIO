@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638437626708134278
-    m_Hash: 604108313
+      ticks: 638473245238906110
+    m_Hash: 3943660346
   m_LockFileStatus:
     m_FilePath: D:/Sword Of Light/PET_PROJ_FOR_PORTFOLIO/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638437626708190508
-    m_Hash: 1183665704
+      ticks: 638473245712602970
+    m_Hash: 569953533
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/Sword Of Light/PET_PROJ_FOR_PORTFOLIO/Packages
-m_EditorVersion: 2022.3.15f1 (b58023a2b463)
+m_EditorVersion: 2022.3.22f1 (887be4894c44)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -240,6 +240,7 @@ m_ResolvedPackages:
     - 2.9.4
     - 2.9.5
     - 2.9.7
+    - 2.10.0
     - 3.0.0-pre.3
     - 3.0.0-pre.4
     - 3.0.0-pre.5
@@ -251,6 +252,7 @@ m_ResolvedPackages:
     compatible:
     - 2.9.5
     - 2.9.7
+    - 2.10.0
     - 3.0.0-pre.3
     - 3.0.0-pre.4
     - 3.0.0-pre.5
@@ -322,12 +324,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.collab-proxy@2.2.0
+- packageId: com.unity.collab-proxy@2.3.1
   testable: 0
   isDirectDependency: 1
-  version: 2.2.0
+  version: 2.3.1
   source: 1
-  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.collab-proxy@2.2.0
+  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.collab-proxy@2.3.1
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -414,9 +416,10 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     - 2.1.0
     - 2.2.0
+    - 2.3.1
     compatible:
-    - 2.2.0
-    recommended: 2.2.0
+    - 2.3.1
+    recommended: 2.3.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -445,16 +448,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638326189440000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.2/manual/index.html
+  datePublishedTicks: 638448201880000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 33c8fba1793946be3c73f738edf70db0b5546afd
+    revision: 613362ccb4468f55ee42e0a35809fb9a61f3f8f1
     path: 
   unityLifecycle:
-    version: 2.2.0
+    version: 2.3.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -513,16 +516,16 @@ m_ResolvedPackages:
   - name: com.unity.animation.rigging
     version: 1.2.1
   - name: com.unity.burst
-    version: 1.8.11
+    version: 1.8.12
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.test-framework
     version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.timeline
     version: 1.7.6
@@ -567,12 +570,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.ide.rider@3.0.26
+- packageId: com.unity.ide.rider@3.0.28
   testable: 0
   isDirectDependency: 1
-  version: 3.0.26
+  version: 3.0.28
   source: 1
-  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.ide.rider@3.0.26
+  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.ide.rider@3.0.28
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -630,10 +633,10 @@ m_ResolvedPackages:
     - 3.0.25
     - 3.0.26
     - 3.0.27
+    - 3.0.28
     compatible:
-    - 3.0.26
-    - 3.0.27
-    recommended: 3.0.27
+    - 3.0.28
+    recommended: 3.0.28
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -652,16 +655,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638326061920000000
+  datePublishedTicks: 638447139880000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 2b29b1152946c13d1ecebf6fc681a59cd8b4d399
+    revision: f4880c72477e9bbd7321c0dbda4428fa10d916df
     path: 
   unityLifecycle:
-    version: 3.0.26
+    version: 3.0.28
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -889,10 +892,14 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
     compatible:
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
     recommended: 1.7.0
     deprecated: []
   dependencies:
@@ -1206,6 +1213,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.6
     - 3.2.0-pre.7
     - 3.2.0-pre.8
+    - 3.2.0-pre.9
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -1220,6 +1228,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.6
     - 3.2.0-pre.7
     - 3.2.0-pre.8
+    - 3.2.0-pre.9
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.8
@@ -3526,16 +3535,16 @@ m_ResolvedPackages:
     version: 1.1.24
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.11
+    version: 1.8.12
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.test-framework
     version: 1.1.33
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords:
   - Animation
@@ -3620,12 +3629,14 @@ m_ResolvedPackages:
     - 5.0.0
     - 5.1.0-pre.1
     - 5.1.0
+    - 5.1.1
     compatible:
     - 4.2.1
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
     - 5.1.0
+    - 5.1.1
     recommended: 4.2.1
     deprecated: []
   dependencies:
@@ -3765,12 +3776,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.burst@1.8.11
+- packageId: com.unity.burst@1.8.12
   testable: 0
   isDirectDependency: 0
-  version: 1.8.11
+  version: 1.8.12
   source: 1
-  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.burst@1.8.11
+  resolvedPath: D:\Sword Of Light\PET_PROJ_FOR_PORTFOLIO\Library\PackageCache\com.unity.burst@1.8.12
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -3913,17 +3924,22 @@ m_ResolvedPackages:
     - 1.8.10
     - 1.8.11
     - 1.8.12
+    - 1.8.13
     compatible:
-    - 1.8.11
     - 1.8.12
-    recommended: 1.8.12
+    - 1.8.13
+    recommended: 1.8.13
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
     version: 1.2.1
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   keywords: []
   registry:
     id: main
@@ -3935,16 +3951,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638360965820000000
+  datePublishedTicks: 638406469710000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: git@github.cds.internal.unity3d.com:unity/burst
-    revision: 1d80ef69a5caadb47bb90e69e6fc822e3a334bd3
+    revision: a18fd968a92da11c38d1edd157e68ad9a490e67b
     path: 
   unityLifecycle:
-    version: 1.8.11
+    version: 1.8.12
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0

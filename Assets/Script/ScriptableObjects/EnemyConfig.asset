@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fc3387ac3c12240a9e960db1121fbb, type: 3}
+  m_Name: EnemyConfig
+  m_EditorClassIdentifier: 
+  EnemysConfigs:
+  - enemyTypes: 1
+    Enemys: {fileID: 8618542878397039702, guid: 6368626ec57c5a04ab16de913d3ca66a, type: 3}
+    EnemyHealth: 50
+    EnemyAttack: 1
+    EnemyDefence: 1
+    EnemyAttackRange: 11
+    EnemySpeed: 11
+    EnemyAttackSpeed: 11
+  - enemyTypes: 2
+    Enemys: {fileID: 5102538922402439851, guid: ef9d005d208d4fd4487b5dcf41a4e512, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 3
+    Enemys: {fileID: 9138344241267800757, guid: 45418593a17d8d34381e762b047d0fd2, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 4
+    Enemys: {fileID: 6485555046174337334, guid: 32bd20e7308492a45b42adbc21071cdb, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 5
+    Enemys: {fileID: 3264228913185703298, guid: a248aabe24bc305408e9ff7f39feb36a, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 6
+    Enemys: {fileID: 5145895028437819570, guid: e396b2c9effcfa849995ea401eef2ce7, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 7
+    Enemys: {fileID: 6138151102435705005, guid: 2860a283d36dd2e448e15040a122b021, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 8
+    Enemys: {fileID: -5506929827917565475, guid: 76702f47b67ca754ca8b8b6a0721472e, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
+  - enemyTypes: 9
+    Enemys: {fileID: -3816284069559453605, guid: 9d281fe4ad81da247894a767cf7ebd1c, type: 3}
+    EnemyHealth: 100
+    EnemyAttack: 2
+    EnemyDefence: 3
+    EnemyAttackRange: 111
+    EnemySpeed: 111
+    EnemyAttackSpeed: 111
