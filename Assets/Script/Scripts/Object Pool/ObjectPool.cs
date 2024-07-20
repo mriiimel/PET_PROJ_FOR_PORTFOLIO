@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using EnemysConfig;
+using Enemy_Config;
 using Zenject;
 
 namespace Object_Pool

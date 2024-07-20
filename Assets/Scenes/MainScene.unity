@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04111985, g: 0.07249684, b: 0.12565836, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4498,6 +4497,7 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -11666,7 +11666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemysConfig: {fileID: 11400000, guid: fb80b515f393c154299ed4e8361358be, type: 2}
-  _pool: {fileID: 1667900991}
+  _enemyCounter: {fileID: 11400000, guid: 14169efa7c4d221459f138ba5e86e149, type: 2}
 --- !u!114 &921858602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12195,7 +12195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953267297}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99994737, z: -0, w: 0.010257785}
+  m_LocalRotation: {x: -0, y: 0.9999474, z: -0, w: 0.010257786}
   m_LocalPosition: {x: 12.27, y: 5.44, z: 47.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20259,50 +20259,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 423888, guid: d537224908c5f444f86c9e57e0c7234c, type: 3}
   m_PrefabInstance: {fileID: 1664725419}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1667900990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1667900992}
-  - component: {fileID: 1667900991}
-  m_Layer: 0
-  m_Name: OBJPOOL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1667900991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667900990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95e5ddd9c848ddb4791a2485c3fb9fba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1667900992
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667900990}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.16, y: 5.1738586, z: 36.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1671231183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23959,19 +23915,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2009632262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 696730c773f7bec468301fc5350632ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 755459d032bc8634caf9e8df011d3cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemySpawns: []
-  _maxEnemyCount: 0
-  _maxTinyEnemy: 0
-  _maxHeavyEnemy: 0
-  _maxHealthEnemy: 0
-  _maxBerserkEnemy: 0
-  _maxMageEnemy: 0
-  _maxBigEnemy: 0
-  _maxAssassinEnemy: 0
-  _maxBossEnemy: 0
 --- !u!4 &2009632264
 Transform:
   m_ObjectHideFlags: 0
@@ -26479,5 +26425,4 @@ SceneRoots:
   - {fileID: 1386771045}
   - {fileID: 1446205517}
   - {fileID: 921858603}
-  - {fileID: 1667900992}
   - {fileID: 2009632264}

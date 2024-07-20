@@ -63,7 +63,7 @@ MonoBehaviour:
     EnemyAttackSpeed: 111
   - enemyTypes: 7
     Enemys: {fileID: 6138151102435705005, guid: 2860a283d36dd2e448e15040a122b021, type: 3}
-    EnemyHealth: 100
+    EnemyHealth: 1011
     EnemyAttack: 2
     EnemyDefence: 3
     EnemyAttackRange: 111

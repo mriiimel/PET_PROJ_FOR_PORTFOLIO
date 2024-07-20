@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace EnemysConfig
+namespace Enemy_Config
 {
     [Serializable]
     public class EnemysConfig

@@ -246,7 +246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1667307065079970865}
   - component: {fileID: 8618542878397039702}
-  - component: {fileID: 6472993809184736562}
   m_Layer: 0
   m_Name: TinySlime
   m_TagString: Untagged
@@ -263,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 6066433650516849033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 12.22, y: 4.59, z: 34.985764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -283,31 +282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6900b47d78de54e8c2d35d557cc8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textMeshPro: {fileID: 8152385698277781863, guid: 8fe4090be2ab44b46ad2076509747c81, type: 3}
-  _spawn: {fileID: 6773376038808352350, guid: 7b3dae9124fec5e489d79568c4b44377, type: 3}
-  pos: {x: 12.25, y: 6.57, z: 40.73}
-  allEnemys: {fileID: 11400000, guid: fb80b515f393c154299ed4e8361358be, type: 2}
---- !u!65 &6472993809184736562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6066433650516849033}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.47581422, z: 1}
-  m_Center: {x: 0, y: 0.2620929, z: 0}
 --- !u!1001 &4284845286738314327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 374414178322298916, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6216532115693788942, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
       propertyPath: m_LocalScale.x
