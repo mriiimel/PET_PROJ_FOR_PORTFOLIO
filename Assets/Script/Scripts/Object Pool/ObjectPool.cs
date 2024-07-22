@@ -1,18 +1,29 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using Enemy_Config;
 using Zenject;
+using Enemy_Factory;
 
 namespace Object_Pool
 {
-    public sealed class ObjectPool
+    public class ObjectPool
     {
-        [Inject] private AllEnemys _allEnemys;
-
+        private EnemyFactoryBase _enemyFactoryBase;
         private Stack<GameObject> _pool;
+        public ObjectPool(EnemyFactoryBase enemyFactoryBase)
+        {
+            _pool = new Stack<GameObject>();
+            _enemyFactoryBase = enemyFactoryBase;
+        }
+        
+        public GameObject GetPool()
+        {
+            return _pool.Peek();
+        }
 
-
-
+        public void AddToPool(EnemyTypes enemyTyps)
+        {
+            _pool.Push(_enemyFactoryBase.CreateEnemy(enemyTyps));
+        }
 
 
     }

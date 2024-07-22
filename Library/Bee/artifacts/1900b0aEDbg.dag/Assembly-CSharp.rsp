@@ -382,6 +382,7 @@
 "Assets/Script/Scripts/AllEnemys.cs"
 "Assets/Script/Scripts/CameraBase.cs"
 "Assets/Script/Scripts/CameraController.cs"
+"Assets/Script/Scripts/Couner.cs"
 "Assets/Script/Scripts/Enemy.cs"
 "Assets/Script/Scripts/EnemyBase.cs"
 "Assets/Script/Scripts/EnemyCounter.cs"

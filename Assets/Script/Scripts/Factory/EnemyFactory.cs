@@ -1,22 +1,29 @@
 ﻿using Enemy_Config;
+using Object_Pool;
 using UnityEngine;
 using Zenject;
 
+
 namespace Enemy_Factory
 {
-    public sealed class EnemyFactory: MonoBehaviour
+    public class EnemyFactory: MonoBehaviour
     {
+        [Inject] public AllEnemys allEnemys { get; }
+        [Inject]private ObjectPool _pool;
         [Inject]private EnemyFactoryBase _enemyFactory;
-       
-        
-        private void Start()
+        public EnemyFactory()
         {
-            Instantiate(_enemyFactory.CreateEnemy(EnemyTypes.SlimeKing));
-           
             
+            _pool = new ObjectPool(_enemyFactory);
         }
 
-        
+        internal EnemyFactoryBase EnemyFactorys { get => _enemyFactory; set => _enemyFactory = value; }
+
+        private void Start()
+        {
+            //allEnemys.DoSomething();
+            _pool.AddToPool(EnemyTypes.TinySlime);
+            Instantiate(_pool.GetPool());
+        }
     }
 }
-

@@ -2,17 +2,17 @@
 using UnityEngine;
 using Zenject;
 
-
 namespace Enemy_Factory
 {
-    public sealed class EnemyFactoryBase
+    public class EnemyFactoryBase
     {
-        [Inject] private AllEnemys _allEnemys;
+        [Inject] private EnemyFactory _factory;
+        
 
         public GameObject CreateEnemy(EnemyTypes enemyTypes)
         {
-            return _allEnemys.GetEnemyWithType(enemyTypes).Enemys.gameObject;
-
+            return _factory.allEnemys.GetEnemyWithType(enemyTypes).Enemys.gameObject;
+            
         }
     }
 }

@@ -116,6 +116,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Script\Scripts\EnemyType.cs" />
     <Compile Include="Assets\Script\Interface\IAttakable.cs" />
+    <Compile Include="Assets\Script\Scripts\Couner.cs" />
     <Compile Include="Assets\Script\Interface\IDamageable.cs" />
     <Compile Include="Assets\Script\Scripts\EnemyBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
