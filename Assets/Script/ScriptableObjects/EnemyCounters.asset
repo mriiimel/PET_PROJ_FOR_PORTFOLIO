@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9b31868f256f54fb201a2cf85d9e53, type: 3}
   m_Name: EnemyCounters
   m_EditorClassIdentifier: 
-  _maxTinySlimes: 10
-  _maxKingSlimes: 3
-  _maxWarriorSlimes: 4
-  _maxRabbitSlimes: 5
-  _maxVikingSlimes: 4
-  _maxBigSlimes: 3
-  _maxBigLeafSlimes: 5
-  _maxBigSproutSlimes: 2
-  _maxBigKingSlimes: 1
+  _couner:
+  - EnemyType: 1
+    EnemyCount: 5
+  - EnemyType: 2
+    EnemyCount: 1
+  - EnemyType: 3
+    EnemyCount: 3
+  - EnemyType: 4
+    EnemyCount: 4
+  - EnemyType: 5
+    EnemyCount: 2
+  - EnemyType: 6
+    EnemyCount: 2
+  - EnemyType: 7
+    EnemyCount: 4
+  - EnemyType: 8
+    EnemyCount: 2
+  - EnemyType: 9
+    EnemyCount: 1

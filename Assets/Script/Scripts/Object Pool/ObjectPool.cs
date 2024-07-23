@@ -2,29 +2,43 @@
 using UnityEngine;
 using Zenject;
 using Enemy_Factory;
+using ModestTree;
+using System;
 
 namespace Object_Pool
 {
-    public class ObjectPool
+    public class ObjectPool:IDisposable
     {
-        private EnemyFactoryBase _enemyFactoryBase;
+        private FactoryBase _enemyFactoryBase;
         private Stack<GameObject> _pool;
-        public ObjectPool(EnemyFactoryBase enemyFactoryBase)
+        public ObjectPool(FactoryBase enemyFactoryBase)
         {
             _pool = new Stack<GameObject>();
             _enemyFactoryBase = enemyFactoryBase;
         }
         
-        public GameObject GetPool()
+        public GameObject GetFromPool()
         {
-            return _pool.Peek();
+            
+            for(int i = 0;i<= _pool.Count; i++)
+            {
+                if(_pool.IsEmpty() == false)
+                    return _pool.Pop();
+                
+            }
+            return null;
         }
 
         public void AddToPool(EnemyTypes enemyTyps)
         {
-            _pool.Push(_enemyFactoryBase.CreateEnemy(enemyTyps));
+            var gameObj = _enemyFactoryBase.CreateEnemy(enemyTyps);
+            gameObj.gameObject.SetActive(false);
+            _pool.Push(gameObj);
         }
 
-
+        public void Dispose()
+        {
+            _pool.Clear();
+        }
     }
 }

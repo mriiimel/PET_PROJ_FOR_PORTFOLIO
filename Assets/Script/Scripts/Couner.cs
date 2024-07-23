@@ -1,9 +1,10 @@
-﻿using UnityEngine;
-using Zenject;
+﻿
+using System;
 
-
-public class Couner: MonoBehaviour
+[Serializable]
+public class Couner
 {
-    [Inject] private EnemyCounter enemyCounter;
+    public EnemyTypes EnemyType;
+    public int EnemyCount;
 }
 

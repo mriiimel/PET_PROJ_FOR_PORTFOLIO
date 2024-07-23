@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,10 +19,6 @@ namespace Enemy_Config
                     return obj;
             }
             return null;
-        }
-        public void DoSomething()
-        {
-            Debug.Log("Im working;");
         }
     }
 }

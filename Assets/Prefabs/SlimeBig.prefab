@@ -45,10 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6900b47d78de54e8c2d35d557cc8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textMeshPro: {fileID: 0}
-  _spawn: {fileID: 0}
-  pos: {x: 0, y: 0, z: 0}
-  allEnemys: {fileID: 0}
 --- !u!1001 &9131799515057293527
 PrefabInstance:
   m_ObjectHideFlags: 0
