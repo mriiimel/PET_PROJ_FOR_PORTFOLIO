@@ -9,12 +9,12 @@ namespace Object_Pool
 {
     public class ObjectPool:IDisposable
     {
-        private FactoryBase _enemyFactoryBase;
+        [Inject]private FactoryBase _enemyFactoryBase;
         private Stack<GameObject> _pool;
-        public ObjectPool(FactoryBase enemyFactoryBase)
+        
+        public ObjectPool()
         {
             _pool = new Stack<GameObject>();
-            _enemyFactoryBase = enemyFactoryBase;
         }
         
         public GameObject GetFromPool()
@@ -23,8 +23,9 @@ namespace Object_Pool
             for(int i = 0;i<= _pool.Count; i++)
             {
                 if(_pool.IsEmpty() == false)
+                {
                     return _pool.Pop();
-                
+                }
             }
             return null;
         }

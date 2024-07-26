@@ -3,7 +3,9 @@ guid: 4776cae6b2d0f164497ce892ee4dd05c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _totalEnemyCountText: {instanceID: 0}
+  - playerController: {fileID: 7263411305897749942, guid: ba4fccdd24fe0b149bc8f0a29e8d0e42, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

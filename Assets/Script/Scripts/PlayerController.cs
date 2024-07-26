@@ -1,31 +1,27 @@
-using Cinemachine;
 using UnityEngine;
 using Zenject;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : PlayerControllerBase
 {
-
-    [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private Collider _collider;
-    [SerializeField] private CinemachineVirtualCamera _vCamera;
-
-    private IPlayer _playerBase;
 
     private Vector3 _movement;
     private Quaternion _rotation;
+    [Inject]private PlayerControllerBase _playerBase;
 
-    public Rigidbody Rigidbody { get => _rigidbody; set => _rigidbody = value; }
-    public Collider Collider { get => _collider; set => _collider = value; }
-    public CinemachineVirtualCamera VCamera { get => _vCamera; set => _vCamera = value; }
+
+
+   
 
     private void Update()
     {
+        _rotation = _playerBase.RotationPl;
         _movement = _playerBase.MoveDirection;
     }
 
     private void FixedUpdate()
     {
         _playerBase.PlayerMove(_movement);
+        _playerBase.LookRotation(_rotation);
         
     }
     
